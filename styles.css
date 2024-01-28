@@ -258,9 +258,18 @@ img[alt="menu"] {
     row-gap: 15px;
 }
 
+.absolute-cards-div h2{
+    padding-bottom: 15px;
+}
+
+
+.absolute-cards-div p{
+    line-height: 25px;
+}
+
 .absolute-cards-div>div {
     border: 1px solid black;
-    width: 30%;
+    width: 23%;
     z-index: 1;
     background-color: white;
     padding: 70px;
