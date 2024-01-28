@@ -920,6 +920,10 @@ button[name="book-appoint"] {
 
 }
 
+.consulting h2{
+    padding-bottom: 15px;
+}
+
 button[name="contact-us"]{
     padding: 18px;
     padding-left: 35px;
