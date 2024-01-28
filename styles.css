@@ -71,7 +71,11 @@ ul {
 
 }
 
-label[for="department"]{
+label[for="department-select"] {
+    display: inherit;
+}
+
+label[for="time-select"]{
     display: inherit;
 }
 
@@ -258,12 +262,12 @@ img[alt="menu"] {
     row-gap: 15px;
 }
 
-.absolute-cards-div h2{
+.absolute-cards-div h2 {
     padding-bottom: 15px;
 }
 
 
-.absolute-cards-div p{
+.absolute-cards-div p {
     line-height: 25px;
 }
 
@@ -330,7 +334,6 @@ img[alt="menu"] {
 .offers>div {
     padding: 73px;
     border-radius: 5px;
-    border: 5px ridge #cfd3d6;
     width: 30%;
 }
 
@@ -431,6 +434,10 @@ img[alt="menu"] {
     font-size: 20px;
 }
 
+img[alt="rating"] {
+    padding-top: 20px;
+}
+
 .clients-feedback>div {
     border: 2px solid #cfd3d6;
     border-radius: 15px;
@@ -440,9 +447,10 @@ img[alt="menu"] {
 }
 
 img[alt="client"] {
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
     padding-bottom: 20px;
-    width: 220px;
-    border-radius: 50px;
 }
 
 .clients-feedback p {
@@ -538,7 +546,7 @@ img[alt="client"] {
 
 .payment>div {
     padding: 90px;
-    width: 30%;
+    width: 24%;
 }
 
 
@@ -556,6 +564,32 @@ img[alt="client"] {
     color: white;
 }
 
+
+.statistics-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.statistics-number {
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.per-month-text {
+    padding-left: 19px;
+}
+
+.dollar-sign-div {
+    text-align: left;
+}
+
+img[alt="dollar-sign"] {
+    text-align: left;
+    padding-left: 15px;
+}
+
 .offer-list {
     padding-top: 38px;
     line-height: 40px;
@@ -570,7 +604,7 @@ img[alt="client"] {
 
 .correct-w-text-div>p {
     text-align: left;
-    
+
 }
 
 /* payment media query */
@@ -583,6 +617,7 @@ img[alt="client"] {
     .middle-div {
         margin-top: 0;
     }
+
     /* .correct-w-text-div{
         font-size: 15px;
     } */
@@ -596,6 +631,7 @@ img[alt="client"] {
     .middle-div {
         margin-top: 0;
     }
+
     /* .correct-w-text-div{
         font-size: 15px;
 
@@ -633,14 +669,13 @@ img[alt="client"] {
 
 .branches {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
-    align-items: center;
     padding: 70px;
     background-color: #18274e;
     color: white;
-    height: 695px;
+    height: 400px;
     margin: 31px;
+    padding-bottom: 620px;
 }
 
 .branches h2 {
@@ -665,7 +700,7 @@ img[alt="world-map"] {
     display: flex;
     /* justify-content: space-between; */
     position: absolute;
-    top: 493px;
+    top: 370px;
     left: 245px;
     background-color: white;
     color: black;
@@ -706,6 +741,14 @@ img[alt="world-map"] {
 
 .form-inputs-small-width select {
     width: 100%;
+    height: 42px;
+    background-color: #e4e5e6;
+    color: #23A6F0;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
 }
 
 form>div {
@@ -727,13 +770,26 @@ form input {
 }
 
 #form-heading-div {
-    text-align: center;
     padding-top: 37px;
     font-size: 23px;
+    width: 71%;
+    margin: auto;
 }
 
 
-select {
+#department-select {
+    height: 42px;
+    width: 451px;
+    background-color: #e4e5e6;
+    color: #23A6F0;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#time-select{
     height: 42px;
     width: 451px;
     background-color: #e4e5e6;
@@ -748,6 +804,7 @@ select {
 img[alt="contact"] {
     height: 100%;
 }
+
 
 button[name="book-appoint"] {
     width: 441px;
@@ -801,6 +858,11 @@ button[name="book-appoint"] {
     .form-inputs input {
         width: 77%;
     }
+
+    #form-heading-div-mini>h2 {
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 992px) and (min-width:786px) {
@@ -838,6 +900,10 @@ button[name="book-appoint"] {
     .form-inputs input {
         width: 77%;
     }
+
+    #form-heading-div-mini>h2 {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 786px) and (min-width:600px) {
@@ -874,6 +940,10 @@ button[name="book-appoint"] {
 
     .form-inputs input {
         width: 77%;
+    }
+
+    #form-heading-div-mini>h2 {
+        text-align: center;
     }
 
 }
@@ -915,58 +985,73 @@ button[name="book-appoint"] {
     }
 
     img[alt="world-map"] {
-        width: 330px;
+        width: 300px;
         padding-top: 30px;
+    }
+
+    #form-heading-div-mini>h2 {
+        text-align: center;
+        font-size: 35px;
+        padding-top: 25px;
     }
 }
 
-.consulting{
+.consulting {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
-    top: 600px;
+    top: 480px;
     margin-bottom: 15px;
+    padding: 74px;
+
 
 }
 
-.consulting h2{
+.consulting h2 {
     padding-bottom: 15px;
 }
 
-button[name="contact-us"]{
+button[name="contact-us"] {
     padding: 18px;
     padding-left: 35px;
     padding-right: 35px;
     background-color: #23A6F0;
     border-style: none;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 17px;
     color: white;
 }
 
-.footer{
+#contact-btn-div {
+    margin: auto;
+}
+
+.footer {
     display: flex;
     position: absolute;
-    top: 197px;
+    top: 221px;
+    left: 0;
     width: 100%;
     background-color: white;
-    padding: 25px;
+    padding: 35px;
+    
 }
 
 .footer h2 {
     padding-bottom: 20px;
 }
 
-.footer p{
+.footer p {
     padding-bottom: 10px;
 }
-.footer > div{
+
+.footer>div {
     width: 100%;
-   padding-bottom: 15px;
-   padding: 25px;
+    padding-bottom: 15px;
+    padding: 25px;
 }
- 
-.get-in-touch{
+
+.get-in-touch {
     display: flex;
     column-gap: 10px;
     padding-bottom: 15px;
@@ -976,44 +1061,106 @@ button[name="contact-us"]{
 
 /* footer media query */
 
-@media  screen and (max-width: 1200px) and (min-width:992px) {
-    .footer{
+@media screen and (max-width: 1200px) and (min-width:992px) {
+    .footer {
         width: 100%;
 
     }
+
+    .consulting {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 943px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        padding: 70px;
+    }
+    #contact-btn-div {
+        padding-top: 20px;
+    }
+    button[name="contact-us"] {
+        font-size: 20px;
+    }
 }
-@media  screen and (max-width: 992px) and (min-width:786px) {
-    .footer{
+
+
+@media screen and (max-width: 992px) and (min-width:786px) {
+    .footer {
         width: 100%;
 
     }
+
+    .consulting {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 1013px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        padding: 68px;
+    }
+    #contact-btn-div {
+        padding-top: 20px;
+    }
+    button[name="contact-us"] {
+        font-size: 20px;
+    }
 }
-@media  screen and (max-width: 786px) and (min-width:600px) {
-    .footer{
+
+@media screen and (max-width: 786px) and (min-width:600px) {
+    .footer {
         width: 100%;
 
     }
+
+    .consulting {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: 1000px;
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+    #contact-btn-div {
+        padding-top: 20px;
+    }
+    button[name="contact-us"] {
+        font-size: 20px;
+    }
 }
-@media  screen and (max-width: 600px){
-    .footer{
+
+@media screen and (max-width: 600px) {
+    .footer {
         padding-top: 15px;
         width: 100%;
-        top: 250px;
+        top: 278px;
         right: 0
     }
-    .comp{
+
+    .comp {
         padding: 15px;
         width: 50%;
     }
-   .consulting{
-    top: 914px;
-    background-color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
 
-   }
+    .consulting {
+        top: 1097px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        flex-wrap: wrap;
+        padding: 59px;
+        
 
-   
+    }
 
-  
+    #contact-btn-div {
+        padding-top: 20px;
+    }
+    button[name="contact-us"] {
+        font-size: 20px;
+    }
+
+
+
 }

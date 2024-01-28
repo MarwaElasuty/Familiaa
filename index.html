@@ -115,21 +115,21 @@
                 <img src="client.jpg" alt="client">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut consectetur illum obcaecati
                     perferendis totam aspernatur sunt eaque mollitia</p>
-                <img src="five-stars.png" alt="rating">
+                <img src="Star-Rating.png" alt="rating">
             </div>
 
             <div>
                 <img src="client.jpg" alt="client">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut consectetur illum obcaecati
                     perferendis totam aspernatur sunt eaque mollitia</p>
-                <img src="five-stars.png" alt="rating">
+                <img src="Star-Rating.png" alt="rating">
             </div>
 
             <div>
                 <img src="client.jpg" alt="client">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In ut consectetur illum obcaecati
                     perferendis totam aspernatur sunt eaque mollitia</p>
-                <img src="five-stars.png" alt="rating">
+                <img src="Star-Rating.png" alt="rating">
             </div>
         </div>
 
@@ -147,6 +147,17 @@
             <div class="first-div">
                 <h2>FREE</h2>
                 <p>Organize by all apps by hand</p>
+
+                <div class="statistics-div">
+                    <div>
+                        <p class="statistics-number">0</p>
+                    </div>
+
+                    <div class="dollar-sign-div">
+                        <img src="badge-dollar.png" alt="dollar-sign">
+                        <p class="per-month-text">Per Month</p>
+                    </div>
+                </div>
 
                 <div class="offer-list">
                     <div class="correct-w-text-div">
@@ -180,6 +191,17 @@
                 <h2>STANDARD</h2>
                 <p>Organize by all apps by hand</p>
 
+                <div class="statistics-div">
+                    <div>
+                        <p class="statistics-number">9.99</p>
+                    </div>
+
+                    <div class="dollar-sign-div">
+                        <img src="badge-dollar.png" alt="dollar-sign">
+                        <p class="per-month-text">Per Month</p>
+                    </div>
+                </div>
+
                 <div class="offer-list">
                     <div class="correct-w-text-div">
                         <img src="correct.png" alt="correct">
@@ -211,6 +233,17 @@
             <div class="third-div">
                 <h2>PREMIUM</h2>
                 <p>Organize by all apps by hand</p>
+
+                <div class="statistics-div">
+                    <div>
+                        <p class="statistics-number">19.99</p>
+                    </div>
+
+                    <div class="dollar-sign-div">
+                        <img src="badge-dollar.png" alt="dollar-sign">
+                        <p class="per-month-text">Per Month</p>
+                    </div>
+                </div>
 
                 <div class="offer-list">
                     <div class="correct-w-text-div">
@@ -264,6 +297,7 @@
                 </div>
 
 
+
                 <div class="form-inputs">
                     <div id="form-heading-div">
                         <h2>Book Appointment</h2>
@@ -281,8 +315,8 @@
 
 
                         <div>
-                            <label for="department">Department</label>
-                            <select id="department" name="department">
+                            <label for="department-select">Department</label>
+                            <select id="department-select" name="department">
                                 <option>Science</option>
                                 <option>Math</option>
                                 <option>Arabic</option>
@@ -291,8 +325,15 @@
                         </div>
 
                         <div>
-                            <label for="time-picker">Time</label>
-                            <input id="time-picker" type="time" name="time">
+                            <label for="time-select">Time</label>
+                            <select id="time-select" name="time">
+                                <option>4:00 Available</option>
+                                <option>3:00 Available</option>
+                                <option>2:00 Available</option>
+                                <option>5:00 Available</option>
+                                <option>9:00 Available</option>
+                            </select>
+                            <!-- <input id="time-picker" type="time" name="time"> -->
                         </div>
                         <button type="submit" name="book-appoint">Book Appointment</button>
                     </form>
@@ -305,7 +346,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus fugit rerum incidunt placeat</p>
                 </div>
 
-                <div>
+                <div id="contact-btn-div">
                     <button type="button" name="contact-us">Contact us</button>
                 </div>
 
