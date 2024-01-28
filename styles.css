@@ -941,6 +941,7 @@ button[name="contact-us"]{
     top: 197px;
     width: 100%;
     background-color: white;
+    padding: 25px;
 }
 
 .footer h2 {
@@ -953,6 +954,7 @@ button[name="contact-us"]{
 .footer > div{
     width: 100%;
    padding-bottom: 15px;
+   padding: 25px;
 }
  
 .get-in-touch{
@@ -985,6 +987,7 @@ button[name="contact-us"]{
 }
 @media  screen and (max-width: 600px){
     .footer{
+        padding-top: 15px;
         width: 100%;
         top: 250px;
         right: 0
@@ -993,7 +996,13 @@ button[name="contact-us"]{
         padding: 15px;
         width: 50%;
     }
-   
+   .consulting{
+    top: 914px;
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+   }
 
    
 
