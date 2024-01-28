@@ -910,3 +910,64 @@ button[name="book-appoint"] {
         padding-top: 30px;
     }
 }
+
+.consulting{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 600px;
+    margin-bottom: 15px;
+
+}
+
+button[name="contact-us"]{
+    padding: 18px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #23A6F0;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 150px;
+    right: 341px;
+    column-gap: 176px;
+    background-color: white;
+}
+
+.footer > div{
+    padding: 20px;
+}
+
+/* footer media query */
+
+@media  screen and (max-width: 1200px) and (min-width:992px) {
+    .footer{
+    }
+}
+@media  screen and (max-width: 992px) and (min-width:786px) {
+    .footer{
+    }
+}
+@media  screen and (max-width: 786px) and (min-width:600px) {
+    .footer{
+    }
+}
+@media  screen and (max-width: 600px){
+    .footer{
+        width: 100%;
+        top: 250px;
+        right: 0
+    }
+
+   
+
+  
+}
