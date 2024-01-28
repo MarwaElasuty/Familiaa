@@ -937,14 +937,10 @@ button[name="contact-us"]{
 
 .footer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     position: absolute;
     top: 197px;
     width: 100%;
-    column-gap: 176px;
     background-color: white;
-    padding: 51px;
 }
 
 .footer h2 {
@@ -955,6 +951,7 @@ button[name="contact-us"]{
     padding-bottom: 10px;
 }
 .footer > div{
+    width: 100%;
    padding-bottom: 15px;
 }
  
@@ -963,6 +960,7 @@ button[name="contact-us"]{
     column-gap: 10px;
     padding-bottom: 15px;
 }
+
 
 
 /* footer media query */
