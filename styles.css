@@ -953,7 +953,12 @@ button[name="contact-us"]{
 .footer > div{
    padding-bottom: 15px;
 }
-
+ 
+.get-in-touch{
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 15px;
+}
 
 
 /* footer media query */
@@ -986,12 +991,7 @@ button[name="contact-us"]{
         padding: 15px;
         width: 50%;
     }
-    
-    .get-in-touch{
-        display: flex;
-        column-gap: 10px;
-        padding-bottom: 15px;
-    }
+   
 
    
 
