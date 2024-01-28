@@ -936,28 +936,44 @@ button[name="contact-us"]{
     flex-wrap: wrap;
     justify-content: space-evenly;
     position: absolute;
-    top: 150px;
-    right: 341px;
+    top: 197px;
+    width: 100%;
     column-gap: 176px;
     background-color: white;
+    padding: 51px;
 }
 
-.footer > div{
-    padding: 20px;
+.footer h2 {
+    padding-bottom: 20px;
 }
+
+.footer p{
+    padding-bottom: 10px;
+}
+.footer > div{
+   padding-bottom: 15px;
+}
+
+
 
 /* footer media query */
 
 @media  screen and (max-width: 1200px) and (min-width:992px) {
     .footer{
+        width: 100%;
+
     }
 }
 @media  screen and (max-width: 992px) and (min-width:786px) {
     .footer{
+        width: 100%;
+
     }
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     .footer{
+        width: 100%;
+
     }
 }
 @media  screen and (max-width: 600px){
@@ -965,6 +981,16 @@ button[name="contact-us"]{
         width: 100%;
         top: 250px;
         right: 0
+    }
+    .comp{
+        padding: 15px;
+        width: 50%;
+    }
+    
+    .get-in-touch{
+        display: flex;
+        column-gap: 10px;
+        padding-bottom: 15px;
     }
 
    
